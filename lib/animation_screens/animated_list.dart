@@ -32,7 +32,7 @@ class _AnimatedListssState extends State<AnimatedListss> {
               color: Colors.red[400],
               child: const Center(
                 child: Text("I am going away",
-                    style: const TextStyle(fontSize: 28)),
+                    style:  TextStyle(fontSize: 28)),
               ),
             ),
           ),

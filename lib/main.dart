@@ -1,6 +1,8 @@
 import 'package:animation_test_app/animation/animated_list.dart';
+import 'package:animation_test_app/animation/animated_swap.dart';
+import 'package:animation_test_app/animation/chat_gpt.dart';
 import 'package:animation_test_app/animation/coin.dart';
-import 'package:animation_test_app/animation_screens/ainmation_crossfade.dart';
+import 'package:animation_test_app/animation/file.dart';
 import 'package:animation_test_app/routs/generated_routs.dart';
 
 import 'package:flutter/foundation.dart';
@@ -12,7 +14,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
- const MyApp({super.key});
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +26,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home:  const AnimatedCrossfades(),
+      home:  const ListPages(),
     );
   }
 }

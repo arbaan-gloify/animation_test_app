@@ -22,6 +22,7 @@ class MySpeech extends StatefulWidget {
   const MySpeech({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _MySpeechState createState() => _MySpeechState();
 }
 

@@ -14,7 +14,7 @@ class _HomePageState extends State<HomePage> {
   double _height = 140;
   double _opacity = 0.0;
   double _angle = 0.0;
-  var _duration = Duration(microseconds: 200);
+  final _duration = const Duration(microseconds: 200);
   late Color _color;
   late double _borderRadius;
   late double _margin;

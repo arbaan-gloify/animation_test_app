@@ -1,18 +1,18 @@
-import 'package:animation_test_app/animated_text/animated_text.dart';
-import 'package:animation_test_app/animation/home_screen.dart';
+import 'package:animation_test_app/animation/animated_list.dart';
+import 'package:animation_test_app/animation/coin.dart';
+import 'package:animation_test_app/animation_screens/ainmation_crossfade.dart';
 import 'package:animation_test_app/routs/generated_routs.dart';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_speech/flutter_speech.dart';
 
 void main() {
   debugDefaultTargetPlatformOverride = TargetPlatform.fuchsia;
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  MyApp({super.key});
+ const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(),
+      home:  const AnimatedCrossfades(),
     );
   }
 }

@@ -34,7 +34,7 @@ class _ReorderableViewPageState extends State<ReorderableViewPage> {
     });
   }
 
-  void random(){
+  void random() {
     setState(() {
       widget.item.shuffle();
     });
@@ -53,14 +53,14 @@ class _ReorderableViewPageState extends State<ReorderableViewPage> {
         centerTitle: true,
         actions: [
           IconButton(
-              icon: const Icon(Icons.sort_by_alpha),
-              tooltip: "Sort",
-              onPressed: random),
+            icon: const Icon(Icons.sort_by_alpha),
+            tooltip: "Sort",
+            onPressed: random,
+          ),
         ],
       ),
       body: ReorderableListView(
         onReorder: reorderData,
-
         anchor: 0.1,
         children: [
           for (final items in widget.item)

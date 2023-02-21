@@ -1,9 +1,4 @@
-import 'package:animation_test_app/animated_text/great_list_view.dart';
-import 'package:animation_test_app/animation/animated_list.dart';
-import 'package:animation_test_app/animation/list2.dart';
-import 'package:animation_test_app/animation/list_screen.dart';
-import 'package:animation_test_app/animation/rive.dart';
-import 'package:animation_test_app/animation/tween_builder.dart';
+import 'package:animation_test_app/animated_text/AnimatedPositionedList.dart';
 import 'package:animation_test_app/routs/generated_routs.dart';
 
 import 'package:flutter/foundation.dart';
@@ -29,7 +24,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home:  ReorderableViewPage(),
+      home: const AnimatedPositionedList(),
     );
   }
 }

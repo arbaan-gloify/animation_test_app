@@ -13,7 +13,7 @@ class _AnimatedPositionedListState extends State<AnimatedPositionedList> {
 
   List<Aa> tempList = [];
 
-  List<double> defaultPoisitionList = [100, 170, 240, 310];
+  List<double> defaultPoisitionList = [100, 170, 240, 310,380];
 
   List<int> indexList = [0, 1, 2, 3];
 
@@ -23,6 +23,7 @@ class _AnimatedPositionedListState extends State<AnimatedPositionedList> {
     Aa(id: 1, points: 200),
     Aa(id: 2, points: 300),
     Aa(id: 3, points: 400),
+    Aa(id: 4, points: 600),
   ];
 
 // TODO THE ININ STATE WILL CHANGE AS PER THE API LOADES EVERY TIME USER OPENS THE PAGE 
@@ -39,6 +40,7 @@ class _AnimatedPositionedListState extends State<AnimatedPositionedList> {
       Aa(id: 1, points: 200),
       Aa(id: 2, points: 300),
       Aa(id: 3, points: 400),
+      Aa(id: 4, points: 600),
     ];
 
     indexList.clear();
@@ -94,40 +96,6 @@ class _AnimatedPositionedListState extends State<AnimatedPositionedList> {
                                 ),
                               ),
                             )),
-                      // AnimatedPositioned(
-                      //   top: defaultPoisitionList[indexList[1]],
-                      //   width: 350,
-                      //   duration: const Duration(seconds: 1),
-                      //   child: Container(
-                      //     alignment: Alignment.center,
-                      //     height: 60,
-                      //     color: Colors.green,
-                      //     child: Text(''.toString()),
-                      //   ),
-                      // ),
-                      // AnimatedPositioned(
-                      //   top: defaultPoisitionList[indexList[2]],
-                      //   width: 350,
-                      //   duration: const Duration(seconds: 1),
-                      //   child: Container(
-                      //     alignment: Alignment.center,
-                      //     height: 60,
-                      //     color: Colors.red,
-                      //     child: Text(''.toString()),
-                      //   ),
-                      // ),
-                      // AnimatedPositioned(
-                      //   curve: Curves.decelerate,
-                      //   top: defaultPoisitionList[indexList[3]],
-                      //   width: 350,
-                      //   duration: const Duration(seconds: 1),
-                      //   child: Container(
-                      //     alignment: Alignment.center,
-                      //     height: 60,
-                      //     color: Colors.purpleAccent,
-                      //     child: Text(''.toString()),
-                      //   ),
-                      // ),
                     ],
                   ),
                 ),

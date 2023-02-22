@@ -1,3 +1,4 @@
+import 'package:animation_test_app/BLOC/screens/user_data_screen.dart';
 import 'package:animation_test_app/animated_text/AnimatedPositionedList.dart';
 import 'package:animation_test_app/routs/generated_routs.dart';
 
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const AnimatedPositionedList(),
+      home: const UserdataScreen(),
     );
   }
 }

@@ -10,12 +10,11 @@ class AnimatedPositionedList extends StatefulWidget {
 }
 
 class _AnimatedPositionedListState extends State<AnimatedPositionedList> {
-
   List<Aa> tempList = [];
 
-  List<double> defaultPoisitionList = [100, 170, 240, 310,380];
+  List<double> defaultPoisitionList = [100, 170, 240, 310, 380];
 
-  List<int> indexList = [0, 1, 2, 3];
+  List<int> indexList = [0, 1, 2, 3, 4];
 
 // TODO LIST OUT INITIAL VALUES
   List<Aa> pointsList = [
@@ -26,7 +25,7 @@ class _AnimatedPositionedListState extends State<AnimatedPositionedList> {
     Aa(id: 4, points: 600),
   ];
 
-// TODO THE ININ STATE WILL CHANGE AS PER THE API LOADES EVERY TIME USER OPENS THE PAGE 
+// TODO THE ININ STATE WILL CHANGE AS PER THE API LOADES EVERY TIME USER OPENS THE PAGE
   @override
   void initState() {
     getNewList();
